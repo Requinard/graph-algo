@@ -105,7 +105,9 @@ class Graph:
         return len([x for x in self.vertexes if x.explored == False])
 
     def print_status(self, q, v):
-        print "Node: {}\t\tUnexplored nodes: {}\tTasks: {}".format(str(v.payload),str(self._unexplored_nodes()), str(q.unfinished_tasks))
+        print "Node: {}\t\tUnexplored nodes: {}\tTasks: {}".format(str(v.payload), str(self._unexplored_nodes()),
+                                                                   str(q.unfinished_tasks))
+
 
 class Vertex:
     def __init__(self, payload):
